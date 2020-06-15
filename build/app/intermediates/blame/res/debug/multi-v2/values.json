@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\flutter\\sourcecode\\sample_project_flutter\\custom_flutter_widget\\custom_flutter_widget\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "D:\\flutter\\sourcecode\\sample_project_flutter\\custom_flutter_widgets\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "D:\\flutter\\sourcecode\\sample_project_flutter\\custom_flutter_widget\\custom_flutter_widget\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "D:\\flutter\\sourcecode\\sample_project_flutter\\custom_flutter_widgets\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

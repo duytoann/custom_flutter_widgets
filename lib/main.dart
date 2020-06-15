@@ -1,4 +1,4 @@
-import 'package:customflutterwidget/presentation/page/progress_indicator/custom_progress_indicator.dart';
+import 'package:customflutterwidget/presentation/page/dialog/custom_dialog.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,7 +8,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: CustomProgressIndicator(),
+      /// for CustomProgressIndicator
+//      home: CustomProgressIndicator(),
+    /// for CustomDialog
+      home: CustomDialog(),
     );
   }
 }
