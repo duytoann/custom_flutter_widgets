@@ -20,20 +20,20 @@ class _DuaRingProgressIndicatorState
   void initState() {
     super.initState();
     _controller = AnimationController(
-        vsync: this, duration: Duration(milliseconds: 1000));
+        vsync: this, duration: Duration(milliseconds: 1200));
 
     /// main circle
     _animation1 = Tween(begin: 0.0, end: 3.0).animate(
       CurvedAnimation(
         parent: _controller,
-        curve: const Interval(0.0, 1.0, curve: Curves.easeIn),
+        curve: const Interval(0.0, 1.0, curve: Curves.linear),
       ),
     )..addListener(() => setState(() => <String, void>{}));
 
     /// starting animation for angle
     _animation2 = Tween(begin: -2 / 3, end: 1 / 2).animate(
       CurvedAnimation(
-          parent: _controller, curve: Interval(0.5, 1.0, curve: Curves.linear)),
+          parent: _controller, curve: Interval(0.5, 1.0, curve: Curves.easeOutBack)),
     )..addListener(() => setState(() => <String, void>{}));
 
     /// offset animation for angle
@@ -82,10 +82,10 @@ class _MyCurve extends Curve {
 
   @override
   double transform(double t) {
-    if (t <= 0.5) {
+    if (t <= 1.0) {
       return 2 * t;
     } else {
-      return 2 * (1 - t);
+      return 2 * (2 - t);
     }
   }
 }

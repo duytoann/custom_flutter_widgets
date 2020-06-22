@@ -1,4 +1,6 @@
 import 'package:customflutterwidget/presentation/page/dialog/custom_dialog.dart';
+import 'package:customflutterwidget/presentation/page/paint/paint_basic.dart';
+import 'package:customflutterwidget/presentation/page/progress_indicator/custom_progress_indicator.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +13,9 @@ class MyApp extends StatelessWidget {
       /// for CustomProgressIndicator
 //      home: CustomProgressIndicator(),
     /// for CustomDialog
-      home: CustomDialog(),
+//      home: CustomDialog(),
+    /// for PaintBasic
+      home: PaintBasic(),
     );
   }
 }

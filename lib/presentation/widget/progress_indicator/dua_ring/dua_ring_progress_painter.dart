@@ -38,8 +38,8 @@ class DuaRingProgressPainter extends CustomPainter {
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke;
 
-    canvas.drawArc(drawingRect, Math.pi + startAngle,Math.pi / 4 + progressAngle, false, greenArc);
-    canvas.drawArc(drawingRect, startAngle,Math.pi / 4 + progressAngle, false, blueArc);
+    canvas.drawArc(drawingRect, Math.pi + startAngle, progressAngle, false, greenArc);
+    canvas.drawArc(drawingRect, startAngle, progressAngle, false, blueArc);
   }
 
   @override
